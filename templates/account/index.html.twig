@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} mon compte - Outlet Treasures {% endblock %}
+
+{% block content %}
+
+    <h1> Mon compte </h1>
+
+    bienvenue {{ app.user.firstname }} dans votre espace
+     <hr>
+    <a href="{{ path('account_password') }}"> Modifier mon mot de passe </a>   <br/>
+    +ajouter adresses <br/>
+    +mes commandes <br/>
+
+
+{% endblock %}

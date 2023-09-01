@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ product.name}} - Outlet Treasures{% endblock %}
+
+{% block content %}
+
+     <div class="row">
+         <div class="col-md-4">
+             <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid">
+         </div>
+         <div class="col-md-7 my-auto">
+             <h1>{{product.name}}</h1>
+             <p>{{ product.subtitle }}</p>
+             <span class="product-page-price">{{ (product.price/100)|number_format(2,',','.') }} TND </span>
+             <hr>
+             <p>
+                 {{ product.discription }}
+             </p>
+             <a href="" class="btn btn-primary" >Ajouter au panier </a>
+
+         </div>
+
+     </div>
+
+
+
+
+{% endblock %}
